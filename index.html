@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="js.css" />
+    <link rel="icon" type="image/jpg" href="./images/gameIcon.jpg">
+    <title>ROCK-PAPER-SCISSORS</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="scoreBoard">
+        <div class="RPS">
+          <h1>ROCK</h1>
+          <h1>PAPER</h1>
+          <h1>SCISSORS</h1>
+        </div>
+        <div class="scoreUpdate">
+          <div class="scoreBoard-pc">
+            <h5>COMPUTER</h5>
+            <h5>SCORE</h5>
+            <span id="pcScoreBoard">0</span>
+          </div>
+          <div class="scoreBoard-user">
+            <h5>YOUR</h5>
+            <h5>SCORE</h5>
+            <span id="userScoreBoard">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="picked-heading">
+        <h2 id="userPickedChoice">YOU PICKED</h2>
+        <h2 id="compPickedChoice">PC PICKED</h2>
+      </div>
+      <div class="whatHaveBeenPicked">
+        <div class="userPickedDisplay">
+          <h3 id="userPicked">scissor</h3>
+        </div>
+        <div class="pcPickedDisplay">
+          <h3 id="compPicked">scissor</h3>
+        </div>
+      </div>
+      <div class="winner-update">
+        <h1 id="you-win"></h1>
+        <h2 id="against-pc">Against Pc</h2>
+      </div>
+      <div class="playAgainButton">
+        <a href="/"><span id="playButton">play Again</span></a>
+      </div>
+      <div class="gameSection">
+        <div class="rockAndScissor">
+          <div class="CIRCLE" id="rock">
+            <div class="outerCircle-rock circles">
+              <div class="innerCircle">
+                <img src="./images/icon-rock.svg"/>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="line" id="line-1"></div>
+          </div>
+          <div class="CIRCLE" id="scissor">
+            <div class="outerCircle-scissor circles">
+              <div class="innerCircle">
+                <img src="./images/icon-scissor.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="container-2">
+            <div class="line" id="line-2"></div>
+            <div class="line" id="line-3"></div>
+          </div>
+        </div>
+        <div class="paper-container">
+          <div class="CIRCLE" id="paper">
+            <div class="outerCircle-paper circles">
+              <div class="innerCircle">
+                <img src="./images/icon-paper.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rule-info">
+        <div class="closeButton">
+          <div class="closeButtonBorder">
+            <span>X</span>
+          </div>
+        </div>
+        <div class="rule-heading">
+          <h1>Game Rules</h1>
+        </div>
+        <div class="rules">
+          <ul>
+            <li>
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <br />
+            <li>
+              Agree ahead of time whether you'll count off
+              “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
+            </li>
+            <br />
+            <li>
+              Use rock, paper, scissors to settle minor decisions or
+              simply play to pass the time
+            </li>
+            <br />
+            <li>
+              If both players lay down the same hand, each player lays down another
+              hand
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section id="rules-btn">
+        <button id="button">RULES</button>
+      </section>
+      <section class="nextButton">
+        <button id="nextPageRedirect">NEXT</button>
+      </section>
+    </div>
+  <div class="nextContent">
+    <div class="animateArea">
+  </div>
+  <img src="./images/winImage.svg">
+    <p id="winCaption">HURRAY!!</p>
+    <p id="winMessage">YOU WON THE GAME</p>
+  </div>
+    <script src="main.js"></script>
+  </body>
+</html>
